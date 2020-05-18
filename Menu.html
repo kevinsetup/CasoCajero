@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+  <section class="caja-principal">
+    <section class="caja-superior">
+        <article id="article1">
+            <button onclick="Retiro()" id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt="" ></button>
+            <button onclick="Consultas()"  id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+            <button id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
+        </article>
+        <div class="pantalla">
+            <p id="titulo">Menu Principal</p>
+            
+            <div class="letrasderechas">
+            
+           
+                <p class="triangulo"></p> <p class="letras" >Retiro</p>
+                <p class="triangulo ctriangulo"></p>  <p class="letras">Consultas</p>
+                <p class="triangulo otriangulo"></p>   <p class="letras">Operaciones</p>
+                
+
+            </div>
+
+            <div class="letrasizquierdas">
+                <p class="triangulo2"></p>  <p>Transferencia</p>
+                <p class="triangulo2 ctriangulo"></p>
+                <p class="triangulo2 otriangulo"></p><p class="letra2">Ultimos movimientos</p>
+
+
+            </div>
+
+
+        </div>
+     
+
+
+        <article id="article2">
+            <button id="boton4" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+            <button id="boton5" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+            <button id="boton6" class="botones-top"><img src="iconos/arrowleft.png" alt=""></button>
+        </article>
+    </section>
+    <section class="cajainferior">
+        <div class="numeros">
+            <button id="n1" class="botones-numero" >1</button>
+            <button id="n2" class="botones-numero" >2</button>
+            <button id="n3" class="botones-numero" >3</button>
+            <button id="n4" class="botones-numero">4</button>
+            <button id="n5" class="botones-numero">5</button>
+            <button id="n6" class="botones-numero">6</button>
+            <button id="n7" class="botones-numero">7</button>
+            <button id="n8" class="botones-numero">8</button>
+            <button id="n9" class="botones-numero">9</button>
+            <button id="n10" class="botones-numero"></button>
+            <button id="n11" class="botones-numero">0</button>
+            <button id="n12" class="botones-numero">.</button>
+
+        </div>
+        <article class="opciones">
+            <button id="cancel" class="boton-op" onclick="Cancel()">CANCEL</button>
+            <button id="clear" class="boton-op" onclick="Clear()">CLEAR</button>
+            <button id="ok" class="boton-op" onclick="Ok()">OK</button>
+            <button id="void" class="boton-op"></button>
+        </article>
+        <section class="relleno">
+            <article id="card" class="cajitas">
+                <p>CARD</p>
+                <div> <div></div></div>
+            </article>
+            <article id="receipt" class="cajitas">
+                <p>RECEIPT</p>
+                <div> <div></div></div>
+            </article>                
+            <article id="cash" class="cajitas">
+                <p>CASH</p>
+                <div> <div></div></div>
+            </article>
+            <article id="deposit" class="cajitas">
+                <p>DEPOSIT</p>
+                <div> <div></div></div>
+            </article>
+        </section>
+    </section>
+</section>
+    <script src="js/Recibirteclas.js"></script>
+    <script src="js/Ok.js"></script>
+    <script src="js/Cancel.js"></script>
+    <script src="js/Clear.js"></script>
+    <script src="js/Retiro.js"></script>
+    <script src="js/Consultas.js"></script>
+</body>
+</html>

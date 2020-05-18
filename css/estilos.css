@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(253, 246, 237);
+}
+.caja-principal{
+    width: 640px;
+    height: 530px;
+    background-color: rgb(156, 156, 156);
+    background-image: linear-gradient(to bottom, rgb(139, 139, 139), rgb(153, 150, 150));
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.caja-superior{
+    width: 610px;
+    height: 290px;
+    padding: 0px 15px 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#titulo{
+    text-align : center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#cajapassword{
+    width: 250px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 8px;
+    border: rgb(255, 196, 0) 2.5px solid;
+    border-radius: 2px;
+    font-size: 20px;
+}
+#article1{
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+#article2{
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+.botones-top{
+    width: 55px;
+    height: 31px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 7px ;
+    border: rgb(0, 0, 0) 1.5px solid;
+    background-image: linear-gradient(to top, black, rgb(97, 97, 97));
+}
+.cajainferior{
+    width: 610px;
+    height: 220px;
+    padding: 0px 15px 10px 15px;
+    display: flex;
+}
+.numeros{
+    width: 190px;
+    height: 350;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.opciones{
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.relleno{
+    width: 305px;
+    border: 1px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.botones-numero{
+    width: 48px;
+    height: 40px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px;
+    border: black 2px solid;
+    background-image: linear-gradient(to top, rgb(161, 161, 161), white);
+    font-size: 20px;
+    font-weight: bold;
+}
+.boton-op{
+    width: 96px;
+    height: 40px;
+    border-radius: 7px;
+    border: black 2px solid;
+    margin: 5px 5px 5px 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.opciones #cancel{
+    background-color: red;
+    color: rgb(220, 221, 211);
+}
+.opciones #clear{
+    background-color:rgb(255, 166, 0);
+    color: rgb(220, 221, 211);
+}
+.opciones #ok{
+    background-color: rgb(112, 187, 0);
+    color: rgb(220, 221, 211);
+}
+.opciones #void{
+    border: none;
+    background-color: rgb(109, 109, 109);
+}
+.relleno .cajitas{
+    width: 96px;
+    height: 50px;
+    border: 1px black solid;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    font-weight: bold;
+}
+.relleno #card{
+    width: 100px;
+    height: 50px;
+}
+.relleno #receipt{
+    width: 140px;
+    height: 50px;
+}
+.relleno #cash{
+    width: 280px;
+    height: 50px;
+}
+.relleno #deposit{
+    width: 280px;
+    height: 50px;  
+}
+.pantalla{ 
+    width: 420px;
+    height: 235px;
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+    margin: 5px 10px 5px 10px;
+    border: rgb(97, 96, 96) 10px solid;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    position: absolute;
+     left: 85px;
+}
+.letrasderechas{
+
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    bottom: 25px;
+
+
+
+    
+}
+.letrasizquierdas{
+  
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+
+
+  
+}
+.reyna{
+padding: 3.5px;
+margin: 0 auto;
+
+
+}
+.textCofirmed{
+
+text-align: center;
+
+}
+.cajablanca{
+    background-image:linear-gradient(to bottom,rgb(250, 250, 98),rgb(255, 246, 163) ) ;
+border: 0;
+}
+
+.triangulo{
+     display: inline-block;
+     width: 0; 
+     height: 0; 
+     border-left: 20px solid #f0ad4e;
+     border-top: 10px solid transparent;
+     border-bottom: 10px solid transparent;
+    
+     position: absolute;
+     left: 0px;
+      top: 5px;
+
+}
+.ctriangulo{
+ top: 50px;
+}
+.otriangulo{
+top: 100px;
+
+}
+
+
+
+.letras{
+  margin-left: 30px;
+}
+
+
+.triangulo2{
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-right: 20px solid #f0ad4e;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+   
+    position: absolute;
+    right: 0px;
+     top: 5px;
+}
+.ctriangulo{
+    top: 50px;
+   }
+.otriangulo{
+ top: 100px;
+    
+ }
+ .utriangulo{
+top: 145px;
+
+ }
+
+
+    .letra2{
+        margin: 0;
+        position: absolute;
+        bottom: 0px;
+    }
+    .letra3{
+        margin-left: 30px;
+        margin-top: 30px;;
+    }
+    .other{
+     font-size: 17px;   
+    }
+    .letrasizquierdas2{
+        width: 150px;
+        height: 165px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        
+
+    }
+    .letrasizquierdas3{
+        width: 150px;
+        height: 120px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+.letrasizquierdas4{
+
+    width: 150px;
+    height: 75px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
