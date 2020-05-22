@@ -1,4 +1,3 @@
-
 var saldo = localStorage.getItem("datasaved");
 class User{
   constructor(saldo){ 
@@ -18,6 +17,10 @@ function Consultas_saldo(){
    alert(localStorage.getItem("datasaved"));
    
 };
+
+
+
+
 function trans_hecha(){
     var elemento = document.getElementById("password").value;
     if(elemento == ""){
