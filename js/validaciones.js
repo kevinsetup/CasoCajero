@@ -1,5 +1,3 @@
-
-
 //logueo Inicio
 logueado = new Boolean(false);
 
@@ -22,6 +20,7 @@ var saldo = localStorage.getItem("datasaved");
 };
 
 var user = new Usuario(document.getElementById("password").value,saldo);
+alert(user.saldo);
 function Ok(){
    user.contraseña = document.getElementById("password").value;
   if(user.contraseña == contraseñaVerif){
@@ -132,9 +131,10 @@ localStorage.setItem("datasaved",saldo);
 
 }
 function trans_20(){
+
   var montodescuento = 20;
   if(montodescuento > user.saldo){
-    alert("Transacción fallida, usted no cuenta con los fondos suficientes");
+   
 
   }else{
   var guardardata = user.saldo - montodescuento;

@@ -1,4 +1,3 @@
-
 const numberButtons = document.querySelectorAll('[datos-numeros]');
 const ElementoTextoOperandoAnterior = document.querySelectorAll('[data-previous]'); 
 class Teclado{
