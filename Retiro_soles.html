@@ -16,26 +16,27 @@
     <section class="caja-principal">
         <section class="caja-superior">
             <article id="article1">
-                <button onclick="trans_20()" id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt="" ></button>
+                <button  onclick="trans_20()" id="boton1" class="botones-top"><img src="iconos/arrowright.png" alt="" ></button>
                 <button  onclick="trans_150()"  id="boton2" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
                 <button  onclick="trans_300()" id="boton3" class="botones-top"><img src="iconos/arrowright.png" alt=""></button>
             </article>
             <div class="pantalla">
                 <p id="titulo">Retiro</p>
                 <input style="display: none;" id="password" type="password" maxlength="8"> 
+                <p style="display: none;"id ="trans" ></p>
                 <div class="letrasderechas">
-                    <p class="triangulo"></p>   <p class="letras">S./ 20</p>
-                    <p class="triangulo ctriangulo"></p>  <p class="letras" >S./ 150 </p>
-                    <p class="triangulo otriangulo"></p>  <p class="letras" >S./ 300 </p>
+                    <p class="triangulo"></p>   <p class="letras" id = "20">S./ 20</p>
+                    <p class="triangulo ctriangulo"></p>  <p class="letras" id = "150">S./ 150 </p>
+                    <p class="triangulo otriangulo"></p>  <p class="letras" id = "300">S./ 300 </p>
     
     
                 </div>
     
                 <div class="letrasizquierdas2">
-                    <p class="triangulo2"></p>     <p>S./ 100</p>
-                    <p class="triangulo2 ctriangulo"></p>    <p >S./ 200</P>
-                        <p class="triangulo2 otriangulo"></p>      <p class="other">Otras cantidades</p>
-                        <p class="triangulo2 utriangulo"></p> <p  >Cancelar</p>
+                    <p class="triangulo2"></p>     <p id = "100">S./ 100</p>
+                    <p class="triangulo2 ctriangulo"></p>    <p id="200">S./ 200</P>
+                        <p class="triangulo2 otriangulo"></p>      <p id="other" class="other">Otras cantidades</p>
+                        <p class="triangulo2 utriangulo"></p> <p  id="cancelar">Cancelar</p>
     
                 </div>
     

@@ -20,7 +20,6 @@ var saldo = localStorage.getItem("datasaved");
 };
 
 var user = new Usuario(document.getElementById("password").value,saldo);
-alert(user.saldo);
 function Ok(){
    user.contraseña = document.getElementById("password").value;
   if(user.contraseña == contraseñaVerif){
@@ -130,11 +129,58 @@ localStorage.setItem("datasaved",saldo);
 
 
 }
+
+function desaparecer(){
+  document.getElementById("20").style.display = 'none';
+    document.getElementById("150").style.display = 'none';
+ 
+    document.getElementById("300").style.display = 'none';
+
+    document.getElementById("100").style.display = 'none';
+  
+    document.getElementById("200").style.display = 'none';
+
+    document.getElementById("cancelar").style.display = 'none';
+    document.getElementById("other").style.display = 'none';
+    
+
+}
+function texto_saldo(){
+  document.getElementById("trans").style.display = 'block';
+  document.getElementById("trans").innerHTML = "Usted no cuenta con los saldos suficientes";
+}
+function texto_saldo_Desaparecer(){
+  document.getElementById("trans").style.display = 'none';
+
+}
+
+function reaparecer(){
+  document.getElementById("20").style.display = 'block';
+  document.getElementById("150").style.display = 'block';
+
+  document.getElementById("300").style.display = 'block';
+
+  document.getElementById("100").style.display = 'block';
+
+  document.getElementById("200").style.display = 'block';
+
+  document.getElementById("cancelar").style.display = 'block';
+  document.getElementById("other").style.display =    'block';
+ 
+}
+
+
+
 function trans_20(){
 
   var montodescuento = 20;
   if(montodescuento > user.saldo){
-   
+  desaparecer();
+  texto_saldo();
+  setTimeout(reaparecer,1000);
+  setTimeout(texto_saldo_Desaparecer,1000);
+ 
+
 
   }else{
   var guardardata = user.saldo - montodescuento;
@@ -147,8 +193,8 @@ function trans_20(){
 function trans_150(){
   var montodescuento = 150;
   if(montodescuento > user.saldo){
-    alert("Transacción fallida, usted no cuenta con los fondos suficientes");
-    
+    desaparecer();
+    texto_saldo();
   }else{
 
 
@@ -161,7 +207,8 @@ function trans_150(){
 function trans_300(){
   var montodescuento = 300;
   if(montodescuento > user.saldo){
-    alert("Transacción fallida, usted no cuenta con los fondos suficientes");
+    desaparecer();
+    texto_saldo();
   }else{
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
@@ -172,7 +219,8 @@ function trans_300(){
 function trans_100(){
   var montodescuento = 100;
    if(montodescuento >user.saldo){
-    alert("Transacción fallida, usted no cuenta con los fondos suficientes");
+    desaparecer();
+    texto_saldo();
    }else{
 
 
@@ -185,7 +233,8 @@ function trans_100(){
 function trans_200(){
   var montodescuento = 200;
   if(montodescuento > user.saldo){
-    alert("Transacción fallida, usted no cuenta con los fondos suficientes");
+    desaparecer();
+    texto_saldo();
   }else{
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
