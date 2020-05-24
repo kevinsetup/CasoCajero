@@ -166,9 +166,18 @@ function reaparecer(){
 
   document.getElementById("cancelar").style.display = 'block';
   document.getElementById("other").style.display =    'block';
- 
+
+}
+function texto_transaccion(){
+  document.getElementById("trans").style.display = 'block';
+  document.getElementById("trans").innerHTML = "Procesando transacción, espere un momento...";
+
 }
 
+function ir_Transaccion(){
+  window.location = "Trans_soles.html";
+
+}
 
 
 function trans_20(){
@@ -185,8 +194,9 @@ function trans_20(){
   }else{
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
-  alert(localStorage.getItem("datasaved"))
-  window.location = "Trans_soles.html";
+  texto_transaccion();
+  desaparecer();
+  setTimeout(ir_Transaccion,2000);
 
   }
 }
@@ -195,13 +205,16 @@ function trans_150(){
   if(montodescuento > user.saldo){
     desaparecer();
     texto_saldo();
+    setTimeout(reaparecer,1000);
+    setTimeout(texto_saldo_Desaparecer,1000);
   }else{
 
 
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
-  alert(localStorage.getItem("datasaved"))
-  window.location = "Trans_soles.html";
+  texto_transaccion();
+  desaparecer();
+  setTimeout(ir_Transaccion,2000);
   }
 }
 function trans_300(){
@@ -209,11 +222,14 @@ function trans_300(){
   if(montodescuento > user.saldo){
     desaparecer();
     texto_saldo();
+    setTimeout(reaparecer,1000);
+    setTimeout(texto_saldo_Desaparecer,1000);
   }else{
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
-  alert(localStorage.getItem("datasaved"))
-  window.location = "Trans_soles.html";
+  texto_transaccion();
+  desaparecer();
+  setTimeout(ir_Transaccion,2000);
   }
 }
 function trans_100(){
@@ -221,13 +237,16 @@ function trans_100(){
    if(montodescuento >user.saldo){
     desaparecer();
     texto_saldo();
+    setTimeout(reaparecer,1000);
+    setTimeout(texto_saldo_Desaparecer,1000);
    }else{
 
 
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
-  alert(localStorage.getItem("datasaved"))
-  window.location = "Trans_soles.html";
+  texto_transaccion();
+  desaparecer();
+  setTimeout(ir_Transaccion,2000);
    }
 }
 function trans_200(){
@@ -235,11 +254,14 @@ function trans_200(){
   if(montodescuento > user.saldo){
     desaparecer();
     texto_saldo();
+    setTimeout(reaparecer,1000);
+    setTimeout(texto_saldo_Desaparecer,1000);
   }else{
   var guardardata = user.saldo - montodescuento;
   localStorage.setItem("datasaved",guardardata);
-  alert(localStorage.getItem("datasaved"))
-  window.location = "Trans_soles.html"
+  texto_transaccion();
+  desaparecer();
+  setTimeout(ir_Transaccion,2000);
   }
 }
 function Consultas_saldo(){
