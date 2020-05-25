@@ -31,8 +31,8 @@ function Ok(){
       logueado = true;
       if(logueado){
         document.getElementById("logueo").style.display = "block";
-        document.getElementById("logueo").innerHTML = "Redigiendo a la página principal ...";
-        setInterval(go,2000);
+        document.getElementById("logueo").innerHTML = "Redirigiendo a la página principal ...";
+        setTimeout(go,2000);
 
       }else{
           alert("ERROR! NO ADMITIDO");
@@ -46,7 +46,7 @@ function Ok(){
       function restart(){
         document.getElementById("logueo").style.display = 'none';
       }
-      setInterval(restart,2500);
+      setTimeout(restart,2500);
       
       var elemento = document.getElementById("password");
        elemento.value = "";
@@ -58,6 +58,7 @@ function Ok(){
 function returnmenu(){
   window.location = "Menu.html";
 }
+
 //Logueo final
 
 
@@ -129,6 +130,44 @@ localStorage.setItem("datasaved",saldo);
 
 
 }
+function deposito(){
+  user.contraseña = document.getElementById("password").value;
+  var elemento2 = user.contraseña;
+  if(elemento2 == ""){
+    document.getElementById("trans").style.display = 'block'; 
+    document.getElementById("trans").innerHTML = "Transacción inválida";
+    function restart(){
+      document.getElementById("trans").style.display = 'none';
+    }
+    setTimeout(restart,2500);
+
+  }else{
+    if(elemento2%10 == 0){
+         var newmonto = Number(user.contraseña);
+         var guardardata = newmonto + Number(user.saldo);
+         localStorage.setItem("datasaved",guardardata);
+         document.getElementById("trans").style.display = 'block';
+        document.getElementById("trans").innerHTML = "Depositado correctamente";
+        setTimeout(returnmenu,2000);
+
+
+
+      
+  }else{
+    document.getElementById("trans").style.display = 'block';
+    document.getElementById("trans").innerHTML = "Sólo múltiplos de 10";
+    function restart3(){
+      document.getElementById("trans").style.display = 'none';
+    }
+    setTimeout(restart3,2500);
+  }
+
+  }
+
+}
+
+
+
 
 function desaparecer(){
   document.getElementById("20").style.display = 'none';
